@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct  4 16:03:17 2021
+# Process ID: 12604
+# Current directory: D:/EBAES/assignments/ABAES-miniProject-graphicsRenderer/GraphicRenderer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9896 D:\EBAES\assignments\ABAES-miniProject-graphicsRenderer\GraphicRenderer\GraphicRenderer.xpr
+# Log file: D:/EBAES/assignments/ABAES-miniProject-graphicsRenderer/GraphicRenderer/vivado.log
+# Journal file: D:/EBAES/assignments/ABAES-miniProject-graphicsRenderer/GraphicRenderer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/EBAES/assignments/ABAES-miniProject-graphicsRenderer/GraphicRenderer/GraphicRenderer.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/EBAES/assignments/ABAES-miniProject-graphicsRenderer/MatlabBuildRootTest1/archive_project_summary.txt'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/../../../../../../sources/vivado/EAAES_Fall_20/EAAES_IP_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/sources/vivado/EAAES_Fall_20/EAAES_IP_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 784.742 ; gain = 135.660
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  4 16:04:37 2021...

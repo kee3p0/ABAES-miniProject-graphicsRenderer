@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 18 14:37:35 2020
+# Process ID: 17784
+# Current directory: C:/sources/vivado/Sys_B_ref_design_Z7_10_V19_1/MatlabBuildRootTest1/MatlabBuildRootTest1.runs/synth_1
+# Command line: vivado.exe -log mainBD_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mainBD_wrapper.tcl
+# Log file: C:/sources/vivado/Sys_B_ref_design_Z7_10_V19_1/MatlabBuildRootTest1/MatlabBuildRootTest1.runs/synth_1/mainBD_wrapper.vds
+# Journal file: C:/sources/vivado/Sys_B_ref_design_Z7_10_V19_1/MatlabBuildRootTest1/MatlabBuildRootTest1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mainBD_wrapper.tcl -notrace
