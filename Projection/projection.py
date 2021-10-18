@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
+import scipy.misc as smp
 
 ####
 X,Y,Z = point = np.array([1,1,11]) #Point/vector 
@@ -25,7 +25,7 @@ u = round(-x*Sx/10+O_x)
 v = round(-y*Sy/10+O_y)
 print("Pixel coords, u:",u," y:",v)
 cols = rows = 256
-pixelarray = np.zeros((rows,cols))
+pixelarray = np.zeros((rows,cols), dtype=np.uint8)
 pixelarray[u,v] = 1
-print(pixelarray)
-print(pixelarray[u,v])
+img = smp.toimage(pixelarray)
+img.show()
