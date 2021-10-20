@@ -4,8 +4,9 @@ from numpy.lib.function_base import append
 from scipy.spatial.transform import Rotation as Rx
 import math
 
+
 def getPixel(point, camera):
-    anx,any,anz = angle = np.array([0,15,0]) #Degrees
+    anx,any,anz = angle = np.array([0,0,-15]) #Degrees
     rad_angle = np.radians(angle)
     theta = 0
     #Rotation of the camera in world coords. The camaera has equal rotations to the world center with 1 on each diagonal
@@ -61,8 +62,10 @@ def getPixel(point, camera):
 
 def checkBound(x):
     if x >= 255:
+        print("BOUND")
         return 255
     elif x <= -255:
+        print("BOUND")
         return -255
     else:
         return x
@@ -72,6 +75,8 @@ def checkBound(x):
 cols = rows = 256
 pixelarray = np.zeros((rows,cols,3), dtype=np.uint8)
 cx,cy,cz = c_point = np.array([0,2,-2])
+u,v = getPixel(np.array([0,0,0]),c_point)
+pixelarray[u,v] = [0,255,0]
      
 for i in range(2):
     for k in range(2):
