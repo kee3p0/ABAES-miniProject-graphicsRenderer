@@ -6,41 +6,41 @@ import math
 
 
 def getPixel(point, camera):
-    anx,any,anz = angle = np.array([0,0,-15]) #Degrees
-    rad_angle = np.radians(angle)
-    theta = 0
-    #Rotation of the camera in world coords. The camaera has equal rotations to the world center with 1 on each diagonal
+    #Camera points in world coords
     cx,cy,cz = camera
-    X,Y,Z= point
-    X,Y,Z,one = Pw = np.array([X,Y,Z,1])
-    # px,py,pz = P = np.array([0,0,0]) #Position of camera in world
-    D = np.array([  (np.cos(anx),np.sin(anx),0),
-                    (-np.sin(anx),np.cos(anx),0),
-                    (0,0,1)])
-    E = np.array([  (1,0,0),
-                    (0,np.cos(anz),np.sin(anz)),
-                    (0,-np.sin(anz),np.cos(anz))])
-    B = np.array([  (np.cos(any),np.sin(any),0),
-                    (-np.sin(any),np.cos(any),0),
-                    (0,0,1)])                
     C = np.array([  (1,0,0,-cx),
                     (0,1,0,-cy),
                     (0,0,1,-cz),
                     (0,0,0,1)])
-    R = np.matmul(B,E,D)
+    X,Y,Z= point
+    X,Y,Z,one = Pw = np.array([X,Y,Z,1])
+    ## Euler rotation matrices, anglur unit is in degree
+    anx,any,anz = angle = np.array([0,0,45])
+    anx,any,anz = rad_angle = np.radians(angle)
+    #Angle x-axis
+    D = np.array([  (np.cos(anx),np.sin(anx),0),    
+                    (-np.sin(anx),np.cos(anx),0),
+                    (0,0,1)])
+    #Angle z-axis
+    E = np.array([  (1,0,0),
+                    (0,np.cos(anz),np.sin(anz)),
+                    (0,-np.sin(anz),np.cos(anz))])
+    #Angle y-axis
+    B = np.array([  (np.cos(any),np.sin(any),0),
+                    (-np.sin(any),np.cos(any),0),
+                    (0,0,1)])                
+    #Combined in the rotation matrix R:
+    R = np.matmul(E,D)
+    R = np.matmul(B,R)
+    #Make a 4x4 matrix
     R = np.append(R,[[0,0,0]],0)
     R = np.append(R,[[0],[0],[0],[1]],1)
-    # R = np.array([  (,-np.sin(theta),0,0),
-    #                 (np.sin(theta),np.cos(theta),0,0),
-    #                 (0,0,1,0),
-    #                 (0,0,0,1)])
-    # T = np.matmul(-R,C)
+    #Subtract camera coords from position coords
     Pwc = np.matmul(C,Pw)
-    X,Y,Z,one= Pc = np.matmul(R,Pwc) #Calculate point in camera POV, using R as rotation and T as the position of the camera in the world
-    ###
-    # Calculate the position of x,y in the camera field
-    ###
-    f = 2; #Focal length
+    #Pc is the point in camera POV, using R as rotation and T as the position of the camera in the world
+    X,Y,Z,one= Pc = np.matmul(R,Pwc) 
+    #Determine the film coords
+    f = 1.5; #Focal length
     F = np.eye(3,M=4)
     F[0,0] = f
     F[1,1] = f
@@ -54,6 +54,7 @@ def getPixel(point, camera):
     O_y = O_x = 126
     Sx =256/8
     Sy =256/8
+    #Change film coords to pixel coords
     u = -x*Sx+O_x
     v = -y*Sy+O_y
     return  math.floor(abs(v)),math.floor(abs(u)) #Indices switched due to array indexing
@@ -76,12 +77,14 @@ cols = rows = 256
 pixelarray = np.zeros((rows,cols,3), dtype=np.uint8)
 cx,cy,cz = c_point = np.array([0,2,-2])
 u,v = getPixel(np.array([0,0,0]),c_point)
+u = checkBound(u)
+v = checkBound(v)
 pixelarray[u,v] = [0,255,0]
      
 for i in range(2):
     for k in range(2):
         for l in range(2):
-            u,v = getPixel(np.array([k,i,l]),c_point)
+            u,v = getPixel(np.array([k,i,l+1]),c_point)
             u = checkBound(u)
             v = checkBound(v)
             print("u:",u," v:",v)
