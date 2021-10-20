@@ -81,7 +81,7 @@ pixelarray[u,v] = [0,255,0]
 for i in range(2):
     for k in range(2):
         for l in range(2):
-            u,v = getPixel(np.array([k,i,l+2]),c_point)
+            u,v = getPixel(np.array([k,i,l]),c_point)
             u = checkBound(u)
             v = checkBound(v)
             print("u:",u," v:",v)
