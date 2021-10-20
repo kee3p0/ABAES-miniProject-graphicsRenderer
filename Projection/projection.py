@@ -4,7 +4,7 @@ from scipy.spatial.transform import Rotation as Rx
 import math
 
 def getPixel(point, camera):
-    thx = 90
+    thx = 0
     theta  = thx/360*2*np.pi
     #Rotation of the camera in world coords. The camaera has equal rotations to the world center with 1 on each diagonal
     cx,cy,cz = camera
@@ -23,8 +23,8 @@ def getPixel(point, camera):
                     (0,0,1,0),
                     (0,0,0,1)])
     # T = np.matmul(-R,C)
-
-    X,Y,Z,one= Pc = np.matmul(R,np.matmul(Pw,C)) #Calculate point in camera POV, using R as rotation and T as the position of the camera in the world
+    Pwc = np.matmul(C,Pw)
+    X,Y,Z,one= Pc = np.matmul(R,Pwc) #Calculate point in camera POV, using R as rotation and T as the position of the camera in the world
     ###
     # Calculate the position of x,y in the camera field
     ###
@@ -52,18 +52,13 @@ def getPixel(point, camera):
 
 
 cx,cy,cz = c_point = np.array([0,0,0])
-cu,cv,cw,c1 = c = np.array([(1,0,0,-cx),
-                            (0,1,0,-cy),
-                            (0,0,1,-cz),
-                            (0,0,0,1)])
+
 cols = rows = 256
 pixelarray = np.zeros((rows,cols,3), dtype=np.uint8)
 
-u,v = getPixel(np.array([8,0,2]),c_point)
+u,v = getPixel(np.array([1,0,2]),c_point)
 
 u1,v1 = getPixel(np.array([0,0,2]),c_point)
-
-
 # if u==u1: 
 #     for i in range(abs(v-v1)):
 #         pixelarray[u,i+v] = [0,255,0]
@@ -74,12 +69,12 @@ u1,v1 = getPixel(np.array([0,0,2]),c_point)
 pixelarray[u1,v1] = [0,255,0]
 
 pixelarray[v,u] = [255,0,0]
-# u,v = getPixel(np.array([1,1,6]),c_point)
-# pixelarray[u,v] = [255,0,0]
-# u,v = getPixel(np.array([0,1,6]),c_point)
-# pixelarray[u,v] = [255,0,0]
-# u,v = getPixel(np.array([1,1,7]),c_point)
-# pixelarray[u,v] = [255,0,0]
+u,v = getPixel(np.array([1,1,2]),c_point)
+pixelarray[u,v] = [255,0,0]
+u,v = getPixel(np.array([0,1,2]),c_point)
+pixelarray[u,v] = [255,0,0]
+u,v = getPixel(np.array([1,1,3]),c_point)
+pixelarray[u,v] = [255,0,0]
 
 image = img.fromarray(pixelarray)
 image.show()
