@@ -72,19 +72,7 @@ def checkBound(x):
 cols = rows = 256
 pixelarray = np.zeros((rows,cols,3), dtype=np.uint8)
 cx,cy,cz = c_point = np.array([0,2,-2])
-# for i in range(3):
-    
-#     v,u= getPixel(np.array([1,0,2]),c_point)
-#     v1,u1 = getPixel(np.array([0,0,2]),c_point)
-#     pixelarray[u1,v1] = [0,255,i*75]
-#     pixelarray[u,v] = [255,0,i*75]
-
-#     v,u = getPixel(np.array([1,1,2]),c_point)
-#     pixelarray[u,v] = [255,0,i*75]
-#     v,u = getPixel(np.array([0,1,2]),c_point)
-#     pixelarray[u,v] = [255,0,i*75]
-#     # u,v = getPixel(np.array([1,1,3]),c_point)
-#     
+     
 for i in range(2):
     for k in range(2):
         for l in range(2):
