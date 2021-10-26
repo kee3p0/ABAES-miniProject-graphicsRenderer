@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+library work;
+use work.mult_4x4_pack.all;
+
+entity camera is
+	port(
+		Cp			:in	t_3c_array;
+		Cangle	:in	t_3c_array;
+		R0			:out 	t_4c_array;
+		R1			:out 	t_4c_array;
+		R2			:out 	t_4c_array;
+		R3			:out 	t_4c_array;
+		C0			:out 	t_4c_array;
+		C1			:out 	t_4c_array;
+		C2			:out 	t_4c_array;
+		C3			:out 	t_4c_array;
+	);
+end camera;
+
+architecture behaviour of camera is
+
+begin
+	variable R : t_4d_array;
+	variable C : t_4d_array;
+	process(Cp,Cangle)
+	begin
+		
+	end process;
+
+end behaviour;

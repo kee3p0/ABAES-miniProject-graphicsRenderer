@@ -1,0 +1,383 @@
+# Reading pref.tcl
+# do cameraProjection_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/mult_4x4_pack.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:55:07 on Oct 26,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/mult_4x4_pack.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package mult_4x4_pack
+# End time: 22:55:07 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:55:07 on Oct 26,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity storeMatrix
+# -- Compiling architecture behaviour of storeMatrix
+# End time: 22:55:07 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:55:07 on Oct 26,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity pwc
+# -- Compiling architecture behaviour of pwc
+# End time: 22:55:08 on Oct 26,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:55:08 on Oct 26,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity rotationCalc
+# -- Compiling architecture behaviour of rotationCalc
+# End time: 22:55:08 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:55:08 on Oct 26,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity filmCoords
+# -- Compiling architecture behaviour of filmCoords
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd(25): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd(26): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Note: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd(29): VHDL Compiler exiting
+# End time: 22:55:08 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./cameraProjection_run_msim_rtl_vhdl.do line 12
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd}"
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/cameraProjection.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:16 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/cameraProjection.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package ARRAY2D
+# -- Loading package ARRAY2D
+# -- Compiling entity cameraProjection
+# -- Compiling architecture bdf_type of cameraProjection
+# End time: 22:56:16 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:16 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity filmCoords
+# -- Compiling architecture behaviour of filmCoords
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd(25): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd(26): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Note: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd(29): VHDL Compiler exiting
+# End time: 22:56:16 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:16 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity matrixMul4d
+# -- Compiling architecture behaviour of matrixMul4d
+# End time: 22:56:16 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/mult_4x4_pack.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:16 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/mult_4x4_pack.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package mult_4x4_pack
+# End time: 22:56:17 on Oct 26,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:17 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity pixelCoords
+# -- Compiling architecture behaviour of pixelCoords
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd(27): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd(28): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Note: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd(31): VHDL Compiler exiting
+# End time: 22:56:17 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:17 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity pwc
+# -- Compiling architecture behaviour of pwc
+# End time: 22:56:17 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:17 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity rotationCalc
+# -- Compiling architecture behaviour of rotationCalc
+# End time: 22:56:17 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:17 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity storeMatrix
+# -- Compiling architecture behaviour of storeMatrix
+# End time: 22:56:17 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:28 on Oct 26,2021
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Skipping package array2d
+# -- Skipping entity cameraprojection
+# -- Skipping entity filmcoords
+# -- Skipping entity matrixmul4d
+# -- Skipping package mult_4x4_pack
+# -- Skipping entity pixelcoords
+# -- Skipping entity pwc
+# -- Skipping entity rotationcalc
+# -- Skipping entity storematrix
+# End time: 22:56:28 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:28 on Oct 26,2021
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package ARRAY2D
+# -- Loading package ARRAY2D
+# -- Compiling entity cameraProjection
+# -- Compiling architecture bdf_type of cameraProjection
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity filmCoords
+# -- Compiling entity matrixMul4d
+# -- Compiling architecture behaviour of matrixMul4d
+# -- Compiling package mult_4x4_pack
+# -- Loading package mult_4x4_pack
+# -- Compiling entity pixelCoords
+# -- Compiling entity pwc
+# -- Compiling architecture behaviour of pwc
+# -- Compiling entity rotationCalc
+# -- Compiling architecture behaviour of rotationCalc
+# -- Compiling entity storeMatrix
+# -- Compiling architecture behaviour of storeMatrix
+# End time: 22:56:28 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.cameraprojection
+# vsim work.cameraprojection 
+# Start time: 22:56:32 on Oct 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.array2d
+# Loading work.cameraprojection(bdf_type)
+# ** Error: (vsim-3173) Entity 'C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/simulation/modelsim/rtl_work.filmcoords' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 22:56:32 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.cameraprojection
+# vsim work.cameraprojection 
+# Start time: 22:56:33 on Oct 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.array2d
+# Loading work.cameraprojection(bdf_type)
+# ** Error: (vsim-3173) Entity 'C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/simulation/modelsim/rtl_work.filmcoords' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 22:56:33 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/cameraProjection.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:48 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/cameraProjection.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package ARRAY2D
+# -- Loading package ARRAY2D
+# -- Compiling entity cameraProjection
+# -- Compiling architecture bdf_type of cameraProjection
+# End time: 22:57:48 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:48 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity filmCoords
+# -- Compiling architecture behaviour of filmCoords
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd(25): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd(26): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Note: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd(29): VHDL Compiler exiting
+# End time: 22:57:48 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:48 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity matrixMul4d
+# -- Compiling architecture behaviour of matrixMul4d
+# End time: 22:57:48 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/mult_4x4_pack.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:48 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/mult_4x4_pack.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package mult_4x4_pack
+# End time: 22:57:48 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:48 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity pixelCoords
+# -- Compiling architecture behaviour of pixelCoords
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd(27): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd(28): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Note: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd(31): VHDL Compiler exiting
+# End time: 22:57:48 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:49 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity pwc
+# -- Compiling architecture behaviour of pwc
+# End time: 22:57:49 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:49 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity rotationCalc
+# -- Compiling architecture behaviour of rotationCalc
+# End time: 22:57:49 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:49 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity storeMatrix
+# -- Compiling architecture behaviour of storeMatrix
+# End time: 22:57:49 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:57:55 on Oct 26,2021
+# vcom -reportprogress 300 -work work C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mult_4x4_pack
+# -- Compiling entity pixelCoords
+# -- Compiling architecture behaviour of pixelCoords
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd(27): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Error: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd(28): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Note: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd(31): VHDL Compiler exiting
+# End time: 22:57:55 on Oct 26,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0

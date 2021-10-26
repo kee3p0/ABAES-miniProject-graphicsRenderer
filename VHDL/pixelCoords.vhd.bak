@@ -1,0 +1,29 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+--USE ieee.std_logic_arith.all;
+use ieee.numeric_std.all;
+--use ieee.std_logic_unsigned.all;
+
+library work;
+use work.mult_4x4_pack.all;
+	
+ENTITY pixelCoords is
+	PORT( 	
+		x : in		std_logic_vector(7 downto 0);
+		y : in		std_logic_vector(7 downto 0);
+		u : out		std_logic_vector(8 downto 0);
+		v : out		std_logic_vector(8 downto 0)
+	);
+END pixelCoords;
+
+ARCHITECTURE behaviour OF pixelCoords is
+
+BEGIN
+	process(u,v)
+	variable 
+	begin
+			x <= std_logic_vector(signed(pc(0))*signed(f)/signed(pc(3))) after 5 ns;
+			y <= std_logic_vector(signed(pc(1))*signed(f)/signed(pc(3))) after 5 ns;
+	end process;
+
+END ARCHITECTURE;

@@ -15,7 +15,7 @@ def getPixel(point, camera):
     X,Y,Z= point
     X,Y,Z,one = Pw = np.array([X,Y,Z,1])
     ## Euler rotation matrices, anglur unit is in degree
-    anx,any,anz = angle = np.array([0,0,45])
+    anx,any,anz = angle = np.array([0,0,-15])
     anx,any,anz = rad_angle = np.radians(angle)
     #Angle x-axis
     D = np.array([  (np.cos(anx),np.sin(anx),0),    
@@ -49,8 +49,8 @@ def getPixel(point, camera):
     X = cp[0,0]
     Y = cp[1,1]
     Z = cp[2,2]
-    x = f*X/(Z)
-    y = f*Y/(Z)
+    x = X/(Z)
+    y = Y/(Z)
     O_y = O_x = 126
     Sx =256/8
     Sy =256/8

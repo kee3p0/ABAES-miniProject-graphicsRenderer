@@ -1,0 +1,39 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY projection IS
+	PORT( 
+		clk   : IN     std_logic;
+		clear : IN     std_logic;
+		load  : IN     std_logic;
+		world	: IN     std_logic_vector(11 downto 0);
+		pixel : OUT  	std_logic_vector(15 downto 0)
+	);
+END projection;
+
+ARCHITECTURE behaviour OF projection IS
+	signal D : std_logic;
+BEGIN
+	process(clk,clear)
+	
+	begin
+		if    clear = '1' then
+			D <= '0' after 5 ns;
+		elsif load  = '1' then
+			D <= sum after 5 ns;
+		else
+			D <= acu after 5 ns;
+		end if;
+	end process;
+	
+	FF:
+	process(clk)
+	
+	begin
+		if rising_edge(clk) then
+			acu <= D after 5 ns;
+		end if;
+	end process;
+
+END ARCHITECTURE;

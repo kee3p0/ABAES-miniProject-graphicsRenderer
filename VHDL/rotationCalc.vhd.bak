@@ -1,0 +1,40 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+--USE ieee.std_logic_arith.all;
+use ieee.numeric_std.all;
+--use ieee.std_logic_unsigned.all;
+
+library work;
+use work.mult_4x4_pack.all;
+	
+ENTITY rotationCalc IS
+	PORT( 	
+		R0	: IN     t_4c_array;
+		R1	: IN		t_4c_array;
+		R2	: IN		t_4c_array;
+		R3	: IN		t_4c_array;
+		pw	: IN  	t_3c_array;
+
+		pc : out		t_3c_array;
+	);
+END rotationCalc;
+
+ARCHITECTURE behaviour OF rotationCalc IS
+
+BEGIN
+	process(R0,R1,R2,R3,pw)
+	variable R	: t_4d_array;
+	variable tmp: t_4c_array;
+	begin
+		R := (R0,R1,R2,R3);
+		for i in 0 to 3 loop
+			for j in 0 to 3 loop
+				tmp(i) <= std_logic_vector(signed(R(i)(j))*signed(pw(j)));
+			end loop;
+		end loop;
+		for i in 0 to 2 loop
+			pw(i) <= tmp(i);
+		end loop;
+	end process;
+
+END ARCHITECTURE;

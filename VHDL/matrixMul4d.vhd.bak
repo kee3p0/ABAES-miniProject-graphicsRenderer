@@ -1,0 +1,25 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+
+type t_3c_array is array(integer range 0 to 3) of std_logic_vector(7 downto 0);	--1x3
+type t_4c_array is array(integer range 0 to 4) of std_logic_vector(7 downto 0); 	--1x4
+type t_4d_array is array(integer range 0 to 4) of t_1c_array;							--4x4
+
+ENTITY matrixMul4d IS
+	PORT( 	
+		A	: IN     t_4d_array;
+		B 	: IN  	t_4d_array;
+		C	: OUT		t_4d_array;
+	);
+END projection;
+
+ARCHITECTURE behaviour OF matrixMul4d IS
+BEGIN
+	process(A,B)
+	--Stores worldPoint
+	begin
+	
+	end process;
+
+END ARCHITECTURE;
