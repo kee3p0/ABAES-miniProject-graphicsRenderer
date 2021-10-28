@@ -4,20 +4,20 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
@@ -152,7 +152,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 1200 240 1376 256)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "u[0..8]" (rect 90 0 121 12)(font "Arial" ))
+	(text "u[0..7]" (rect 90 0 121 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -168,7 +168,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 1200 256 1376 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "v[0..8]" (rect 90 0 123 12)(font "Arial" ))
+	(text "v[0..7]" (rect 90 0 123 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -230,28 +230,28 @@ https://fpgasoftware.intel.com/eula.
 		(pt 272 32)
 		(output)
 		(text "out_matrix0[0..3][7..0]" (rect 0 0 109 12)(font "Arial" ))
-		(text "out_matrix0[0..3][7..0]" (rect 159 27 251 39)(font "Arial" ))
+		(text "out_matrix0[0..3][7..0]" (rect 159 27 268 39)(font "Arial" ))
 		(line (pt 272 32)(pt 256 32)(line_width 3))
 	)
 	(port
 		(pt 272 48)
 		(output)
 		(text "out_matrix1[0..3][7..0]" (rect 0 0 109 12)(font "Arial" ))
-		(text "out_matrix1[0..3][7..0]" (rect 159 43 251 55)(font "Arial" ))
+		(text "out_matrix1[0..3][7..0]" (rect 159 43 268 55)(font "Arial" ))
 		(line (pt 272 48)(pt 256 48)(line_width 3))
 	)
 	(port
 		(pt 272 64)
 		(output)
 		(text "out_matrix2[0..3][7..0]" (rect 0 0 109 12)(font "Arial" ))
-		(text "out_matrix2[0..3][7..0]" (rect 159 59 251 71)(font "Arial" ))
+		(text "out_matrix2[0..3][7..0]" (rect 159 59 268 71)(font "Arial" ))
 		(line (pt 272 64)(pt 256 64)(line_width 3))
 	)
 	(port
 		(pt 272 80)
 		(output)
 		(text "out_matrix3[0..3][7..0]" (rect 0 0 109 12)(font "Arial" ))
-		(text "out_matrix3[0..3][7..0]" (rect 159 75 251 87)(font "Arial" ))
+		(text "out_matrix3[0..3][7..0]" (rect 159 75 268 87)(font "Arial" ))
 		(line (pt 272 80)(pt 256 80)(line_width 3))
 	)
 	(drawing
@@ -280,47 +280,11 @@ https://fpgasoftware.intel.com/eula.
 		(pt 208 32)
 		(output)
 		(text "pwc[0..2][7..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "pwc[0..2][7..0]" (rect 128 27 187 39)(font "Arial" ))
+		(text "pwc[0..2][7..0]" (rect 128 27 198 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 192 64))
-	)
-)
-(symbol
-	(rect 1032 216 1184 296)
-	(text "pixelCoords" (rect 5 0 62 12)(font "Arial" ))
-	(text "pixel" (rect 8 64 30 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "x[7..0]" (rect 0 0 31 12)(font "Arial" ))
-		(text "x[7..0]" (rect 21 27 52 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "y[7..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "y[7..0]" (rect 21 43 54 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 152 32)
-		(output)
-		(text "u[8..0]" (rect 0 0 31 12)(font "Arial" ))
-		(text "u[8..0]" (rect 105 27 131 39)(font "Arial" ))
-		(line (pt 152 32)(pt 136 32)(line_width 3))
-	)
-	(port
-		(pt 152 48)
-		(output)
-		(text "v[8..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "v[8..0]" (rect 104 43 131 55)(font "Arial" ))
-		(line (pt 152 48)(pt 136 48)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 136 64))
 	)
 )
 (symbol
@@ -338,14 +302,14 @@ https://fpgasoftware.intel.com/eula.
 		(pt 192 32)
 		(output)
 		(text "x[7..0]" (rect 0 0 31 12)(font "Arial" ))
-		(text "x[7..0]" (rect 145 27 171 39)(font "Arial" ))
+		(text "x[7..0]" (rect 145 27 176 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(port
 		(pt 192 48)
 		(output)
 		(text "y[7..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "y[7..0]" (rect 144 43 171 55)(font "Arial" ))
+		(text "y[7..0]" (rect 144 43 177 55)(font "Arial" ))
 		(line (pt 192 48)(pt 176 48)(line_width 3))
 	)
 	(drawing
@@ -353,7 +317,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 544 216 768 360)
+	(rect 536 216 760 360)
 	(text "rotationCalc" (rect 5 0 64 12)(font "Arial" ))
 	(text "inst13" (rect 8 128 37 140)(font "Arial" ))
 	(port
@@ -395,11 +359,47 @@ https://fpgasoftware.intel.com/eula.
 		(pt 224 32)
 		(output)
 		(text "pc_out[0..2][7..0]" (rect 0 0 84 12)(font "Arial" ))
-		(text "pc_out[0..2][7..0]" (rect 132 27 203 39)(font "Arial" ))
+		(text "pc_out[0..2][7..0]" (rect 132 27 216 39)(font "Arial" ))
 		(line (pt 224 32)(pt 208 32)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 208 128))
+	)
+)
+(symbol
+	(rect 1016 216 1168 296)
+	(text "pixelCoords" (rect 5 0 62 12)(font "Arial" ))
+	(text "pixel" (rect 8 64 30 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "x[7..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "x[7..0]" (rect 21 27 52 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "y[7..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "y[7..0]" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "u[7..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "u[7..0]" (rect 105 27 131 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "v[7..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "v[7..0]" (rect 104 43 131 55)(font "Arial" ))
+		(line (pt 152 48)(pt 136 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
 	)
 )
 (connector
@@ -441,62 +441,62 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 1184 264)
-	(pt 1200 264)
-	(bus)
-)
-(connector
-	(pt 1184 248)
-	(pt 1200 248)
-	(bus)
-)
-(connector
-	(pt 984 248)
-	(pt 1032 248)
-	(bus)
-)
-(connector
-	(pt 984 264)
-	(pt 1032 264)
-	(bus)
-)
-(connector
-	(pt 496 248)
-	(pt 544 248)
-	(bus)
-)
-(connector
-	(pt 496 264)
-	(pt 544 264)
-	(bus)
-)
-(connector
-	(pt 496 280)
-	(pt 544 280)
-	(bus)
-)
-(connector
-	(pt 496 296)
-	(pt 544 296)
-	(bus)
-)
-(connector
 	(pt 496 424)
 	(pt 520 424)
 	(bus)
 )
 (connector
+	(pt 984 248)
+	(pt 1016 248)
+	(bus)
+)
+(connector
+	(pt 984 264)
+	(pt 1016 264)
+	(bus)
+)
+(connector
+	(pt 1168 248)
+	(pt 1200 248)
+	(bus)
+)
+(connector
+	(pt 1168 264)
+	(pt 1200 264)
+	(bus)
+)
+(connector
 	(pt 520 424)
 	(pt 520 312)
 	(bus)
 )
 (connector
-	(pt 544 312)
 	(pt 520 312)
+	(pt 536 312)
 	(bus)
 )
 (connector
-	(pt 768 248)
+	(pt 496 248)
+	(pt 536 248)
+	(bus)
+)
+(connector
+	(pt 760 248)
 	(pt 792 248)
+	(bus)
+)
+(connector
+	(pt 496 264)
+	(pt 536 264)
+	(bus)
+)
+(connector
+	(pt 496 280)
+	(pt 536 280)
+	(bus)
+)
+(connector
+	(pt 496 296)
+	(pt 536 296)
 	(bus)
 )
