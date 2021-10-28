@@ -68,4 +68,6 @@ set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name VHDL_FILE rotationCalc.vhd
 set_global_assignment -name VHDL_FILE filmCoords.vhd
 set_global_assignment -name VHDL_FILE pixelCoords.vhd
+set_global_assignment -name BDF_FILE projection.bdf
+set_global_assignment -name VHDL_FILE vectorStore.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

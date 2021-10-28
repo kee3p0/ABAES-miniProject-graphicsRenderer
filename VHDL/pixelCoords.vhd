@@ -20,12 +20,16 @@ ARCHITECTURE behaviour OF pixelCoords is
 
 BEGIN
 	process(x,y)
+	variable tmp: std_logic_vector(15 downto 0);
 	variable S : integer:=32;
 	variable O : integer:=126;
 
 	begin
-			u <= std_logic_vector(-signed(x)*S+O)(8 downto 0) after 5 ns;
-			v <= std_logic_vector(-signed(y)*S+O)(8 downto 0) after 5 ns;
+			tmp:= std_logic_vector(-signed(x)*S);
+			tmp:= std_logic_vector(signed(tmp)+O);
+			u <= std_logic_vector(tmp(8 downto 0));
+			tmp:= std_logic_vector(-signed(y)*S+O);
+			v <= std_logic_vector(tmp(8 downto 0));
 	end process;
 
 END ARCHITECTURE;

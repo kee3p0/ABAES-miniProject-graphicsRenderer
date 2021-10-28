@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+--USE ieee.std_logic_arith.all;
+use ieee.numeric_std.all;
+--use ieee.std_logic_unsigned.all;
+
+library work;
+use work.mult_4x4_pack.all;
+	
+entity vectorStore is
+	port( 	
+		clk	:in	std_logic;
+		load	:in	std_logic;
+		
+		p0 	:in	std_logic_vector(7 downto 0);
+		P1 	:in	std_logic_vector(7 downto 0);
+		P2 	:in	std_logic_vector(7 downto 0);
+		P3 	:in	std_logic_vector(7 downto 0);
+		P4 	:in	std_logic_vector(7 downto 0);
+		P5 	:in	std_logic_vector(7 downto 0);
+		P6 	:in	std_logic_vector(7 downto 0);
+		P7 	:in	std_logic_vector(7 downto 0);
+		
+		w0		:out std_logic_vector(7 downto 0);
+		w1		:out std_logic_vector(7 downto 0);
+		w2		:out std_logic_vector(7 downto 0);
+		w3		:out std_logic_vector(7 downto 0);
+		w4		:out std_logic_vector(7 downto 0);
+		w5		:out std_logic_vector(7 downto 0);
+		w6		:out std_logic_vector(7 downto 0);
+		w7		:out std_logic_vector(7 downto 0)
+		
+	);
+END vectorStore;
+
+architecture behaviour of vectorStore is
+
+end;

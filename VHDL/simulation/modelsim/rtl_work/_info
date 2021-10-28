@@ -13,20 +13,20 @@ Z0 dC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/simul
 Parray2d
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 13
-Z3 w1635281698
+!i122 15
+Z3 w1635365081
 R0
 Z4 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/cameraProjection.vhd
 Z5 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/cameraProjection.vhd
 l0
 L25 1
-VSBz0?=_3^c;f0n_T]Dh?d1
-!s100 8edZEIi_9>6zGFFEF1PMo0
+VOgIZH];li[P>N18P=OXzB3
+!s100 E4SzS0F[N@OdTGC>[Wb022
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1635281868
+Z7 !s110 1635365123
 !i10b 1
-Z8 !s108 1635281868.000000
+Z8 !s108 1635365123.000000
 Z9 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/cameraProjection.vhd|
 Z10 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/cameraProjection.vhd|
 !i113 1
@@ -34,17 +34,17 @@ Z11 o-work work
 Z12 tExplicit 1 CvgOpt 0
 Ecameraprojection
 R3
-Z13 DPx4 work 7 array2d 0 22 SBz0?=_3^c;f0n_T]Dh?d1
+Z13 DPx4 work 7 array2d 0 22 OgIZH];li[P>N18P=OXzB3
 R1
 R2
-!i122 13
+!i122 15
 R0
 R4
 R5
 l0
 L34 1
-Vi?LP=IZVUb1;FJD:XhZ4Z2
-!s100 C5dkf8NHW[Q:1E1bi_L;K3
+VH^>M]NChY@KZlP=MWBjCM3
+!s100 33H4DkRh_e_T9V;@9IH8O0
 R6
 32
 R7
@@ -59,12 +59,12 @@ Abdf_type
 R13
 R1
 R2
-DEx4 work 16 cameraprojection 0 22 i?LP=IZVUb1;FJD:XhZ4Z2
-!i122 13
-l110
-L51 106
-V=51iBj4O_Bz1;`zzJmIS40
-!s100 G<[>]O1nF8SH59`MYGf?;3
+Z14 DEx4 work 16 cameraprojection 0 22 H^>M]NChY@KZlP=MWBjCM3
+!i122 15
+l108
+Z15 L50 104
+Z16 V2kGP:^;_d?F>oW5fd56L`3
+Z17 !s100 ]@XVEAhhYVFH@h3XZTg0H1
 R6
 32
 R7
@@ -76,79 +76,103 @@ R10
 R11
 R12
 Efilmcoords
-w1635281813
-Z14 DPx4 work 13 mult_4x4_pack 0 22 Vj@Sd5bnXg4zf0fkHHmSX0
-Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z18 DPx4 work 13 mult_4x4_pack 0 22 Vj@Sd5bnXg4zf0fkHHmSX0
+Z19 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 14
-R0
-8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd
-FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd
-l0
-Z16 L10 1
-VeebK5jmO1Sc@zbWQ=l4F_2
-!s100 >N4hLbF[8F9kH9ZSIdFlT2
-R6
 32
-R7
+Z20 !s110 1635365095
 !i10b 1
-R8
-!s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd|
-!s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd|
-!i113 1
-R11
-R12
-Ematrixmul4d
-Z17 w1635271236
-R14
-R15
-R1
-R2
-!i122 15
+Z21 w1635364874
+!i122 8
 R0
-Z18 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd
-Z19 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd
+Z22 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd
+Z23 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd
 l0
-R16
-VmiXGXhKHDg]L^cQb4F7`?1
-!s100 zkbPd75i^P@6]`I>9B5:z0
+Z24 L10 1
+V?[9a0?MDW6o>fHE329jZ_3
+!s100 fdNBK?:hN@@hcFoC8NNJ52
 R6
-32
-R7
-!i10b 1
-R8
-Z20 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd|
-Z21 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd|
+Z25 !s108 1635365095.000000
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd|
+Z27 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd|
 !i113 1
 R11
 R12
 Abehaviour
-R14
-R15
+R18
+R19
+R1
+R2
+DEx4 work 10 filmcoords 0 22 ?[9a0?MDW6o>fHE329jZ_3
+32
+R20
+!i10b 1
+!i122 8
+l21
+L19 14
+V?JCcmm3M76Izk_MOP_=Sd3
+!s100 Mk]Y;FeF7R;3PU[^iaUgh3
+R6
+R25
+R26
+R27
+!i113 1
+R11
+R12
+Ematrixmul4d
+R18
+R19
+R1
+R2
+32
+R20
+!i10b 1
+Z28 w1635271236
+!i122 9
+R0
+Z29 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd
+Z30 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd
+l0
+R24
+VmiXGXhKHDg]L^cQb4F7`?1
+!s100 zkbPd75i^P@6]`I>9B5:z0
+R6
+R25
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd|
+Z32 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/matrixMul4d.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R18
+R19
 R1
 R2
 DEx4 work 11 matrixmul4d 0 22 miXGXhKHDg]L^cQb4F7`?1
-!i122 15
+32
+R20
+!i10b 1
+!i122 9
 l29
 L27 24
 V;2AjNH_VB3=CCciL;:_N90
 !s100 BUI1enHg5a26hZJ9XUg5E1
 R6
-32
-R7
-!i10b 1
-R8
-R20
-R21
+R25
+R31
+R32
 !i113 1
 R11
 R12
 Pmult_4x4_pack
-R15
+R19
 R1
 R2
-!i122 16
+32
+R20
+!i10b 1
+!i122 10
 w1635271057
 R0
 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/mult_4x4_pack.vhd
@@ -158,171 +182,189 @@ L5 1
 VVj@Sd5bnXg4zf0fkHHmSX0
 !s100 Bdd4Q:V2f^S27YUjCSeT61
 R6
-32
-R7
-!i10b 1
-R8
+R25
 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/mult_4x4_pack.vhd|
 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/mult_4x4_pack.vhd|
 !i113 1
 R11
 R12
 Epixelcoords
-w1635281617
-R14
-R15
+R18
+R19
 R1
 R2
-!i122 21
+32
+R20
+!i10b 1
+Z33 w1635362544
+!i122 11
 R0
-8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd
-FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd
+Z34 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd
+Z35 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd
 l0
-R16
+R24
 VVKYf9LR@hTZ<IhGDYnlM30
 !s100 QM<M?VJbQ^NPb`_@i=z<d1
 R6
+R25
+Z36 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd|
+Z37 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R18
+R19
+R1
+R2
+DEx4 work 11 pixelcoords 0 22 VKYf9LR@hTZ<IhGDYnlM30
 32
-!s110 1635281875
+R20
 !i10b 1
-!s108 1635281875.000000
-!s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd|
-!s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd|
+!i122 11
+l21
+L19 17
+V4SO@S_`1]VX5nXGj1I:o91
+!s100 NFC>=6o6[l@H7C96Kn5FN1
+R6
+R25
+R36
+R37
 !i113 1
 R11
 R12
 Epwc
-Z22 w1635277924
-R14
-R15
+R18
+R19
 R1
 R2
-!i122 18
+32
+Z38 !s110 1635365096
+!i10b 1
+Z39 w1635277924
+!i122 12
 R0
-Z23 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd
-Z24 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd
+Z40 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd
+Z41 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd
 l0
 L8 1
 VIj=zln5]]fdN]bfcGHOJa2
 !s100 3d:?L_>g86:TnDeA[h:eU1
 R6
-32
-Z25 !s110 1635281869
-!i10b 1
-Z26 !s108 1635281869.000000
-Z27 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd|
-Z28 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd|
+Z42 !s108 1635365096.000000
+Z43 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd|
+Z44 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pwc.vhd|
 !i113 1
 R11
 R12
 Abehaviour
-R14
-R15
+R18
+R19
 R1
 R2
 DEx4 work 3 pwc 0 22 Ij=zln5]]fdN]bfcGHOJa2
-!i122 18
+32
+R38
+!i10b 1
+!i122 12
 l18
 L16 12
 VS`ack_W0>om`fZQg^]bia3
 !s100 dz?BFMegl5im4AX;Fi>PX1
 R6
-32
-R25
-!i10b 1
-R26
-R27
-R28
+R42
+R43
+R44
 !i113 1
 R11
 R12
 Erotationcalc
-Z29 w1635280295
-R14
-R15
+R18
+R19
 R1
 R2
-!i122 19
-R0
-Z30 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd
-Z31 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd
-l0
-R16
-V_=IF8SKLQS>?hQ52^F16H2
-!s100 TcNCjSd:?XCZRO2oUX86m1
-R6
 32
-R25
+R38
 !i10b 1
-R26
-Z32 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd|
-Z33 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd|
+Z45 w1635365037
+!i122 13
+R0
+Z46 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd
+Z47 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd
+l0
+R24
+VRCO8oG=>cMH_]X_=7877?1
+!s100 [5[L7egb>3kKA1zoML6FB3
+R6
+R42
+Z48 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd|
+Z49 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd|
 !i113 1
 R11
 R12
 Abehaviour
-R14
-R15
+R18
+R19
 R1
 R2
-DEx4 work 12 rotationcalc 0 22 _=IF8SKLQS>?hQ52^F16H2
-!i122 19
+DEx4 work 12 rotationcalc 0 22 RCO8oG=>cMH_]X_=7877?1
+32
+R38
+!i10b 1
+!i122 13
 l24
 L22 19
-VEl4^2D;kX6^VRD4Ko^<C00
-!s100 LkiL2@Q^3F;B9300BLBLN2
+VRWA>U;DKMYiS:G54ge^d;2
+!s100 hgzBP?zc@TAof^][FzDIW1
 R6
-32
-R25
-!i10b 1
-R26
-R32
-R33
+R42
+R48
+R49
 !i113 1
 R11
 R12
 Estorematrix
-Z34 w1635275780
-R14
-R15
+R18
+R19
 R1
 R2
-!i122 20
+32
+R38
+!i10b 1
+Z50 w1635275780
+!i122 14
 R0
-Z35 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd
-Z36 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd
+Z51 8C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd
+Z52 FC:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd
 l0
 L8 1
 V[f8]I7f43L895C^_hGQdB1
 !s100 @`G@XCU^_RAI3zMVIfYGF2
 R6
-32
-R25
-!i10b 1
-R26
-Z37 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd|
-Z38 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd|
+R42
+Z53 !s90 -reportprogress|300|-work|work|C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd|
+Z54 !s107 C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/storeMatrix.vhd|
 !i113 1
 R11
 R12
 Abehaviour
-R14
-R15
+R18
+R19
 R1
 R2
 DEx4 work 11 storematrix 0 22 [f8]I7f43L895C^_hGQdB1
-!i122 20
+32
+R38
+!i10b 1
+!i122 14
 l26
 L24 18
 V7W1AD>WBW60NWoDm<Ki;i3
 !s100 ^gz3C^h[Z7JAPHfzPJT=F3
 R6
-32
-R25
-!i10b 1
-R26
-R37
-R38
+R42
+R53
+R54
 !i113 1
 R11
 R12

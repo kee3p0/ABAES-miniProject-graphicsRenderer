@@ -1,5 +1,5 @@
 Analysis & Elaboration report for cameraProjection
-Tue Oct 26 23:00:31 2021
+Wed Oct 27 22:35:27 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Failed - Tue Oct 26 23:00:31 2021           ;
+; Analysis & Elaboration Status ; Successful - Wed Oct 27 22:35:27 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; cameraProjection                            ;
 ; Top-level Entity Name         ; cameraProjection                            ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Oct 26 23:00:26 2021
+    Info: Processing started: Wed Oct 27 22:35:21 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cameraProjection -c cameraProjection --analysis_and_elaboration
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file storematrix.vhd
@@ -182,22 +182,31 @@ Info (12021): Found 2 design units, including 1 entities, in source file rotatio
     Info (12022): Found design unit 1: rotationCalc-behaviour File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd Line: 22
     Info (12023): Found entity 1: rotationCalc File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/rotationCalc.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file filmcoords.vhd
-    Info (12022): Found design unit 1: filmCoords-behaviour File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd Line: 20
+    Info (12022): Found design unit 1: filmCoords-behaviour File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd Line: 19
     Info (12023): Found entity 1: filmCoords File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file pixelcoords.vhd
     Info (12022): Found design unit 1: pixelCoords-behaviour File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd Line: 19
     Info (12023): Found entity 1: pixelCoords File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file projection.bdf
+    Info (12023): Found entity 1: projection
+Info (12021): Found 2 design units, including 1 entities, in source file vectorstore.vhd
+    Info (12022): Found design unit 1: vectorStore-behaviour File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/vectorStore.vhd Line: 36
+    Info (12023): Found entity 1: vectorStore File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/vectorStore.vhd Line: 10
 Info (12127): Elaborating entity "cameraProjection" for the top level hierarchy
 Info (12128): Elaborating entity "pixelCoords" for hierarchy "pixelCoords:pixel"
-Warning (10542): VHDL Variable Declaration warning at pixelCoords.vhd(23): used initial value expression for variable "S" because variable was never assigned a value File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd Line: 23
-Warning (10542): VHDL Variable Declaration warning at pixelCoords.vhd(24): used initial value expression for variable "O" because variable was never assigned a value File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd Line: 24
+Warning (10542): VHDL Variable Declaration warning at pixelCoords.vhd(24): used initial value expression for variable "S" because variable was never assigned a value File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd Line: 24
+Warning (10542): VHDL Variable Declaration warning at pixelCoords.vhd(25): used initial value expression for variable "O" because variable was never assigned a value File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/pixelCoords.vhd Line: 25
 Info (12128): Elaborating entity "filmCoords" for hierarchy "filmCoords:film"
-Error (10324): VHDL Expression error at filmCoords.vhd(24): expression ""00000000"" has 8 elements ; expected 16 elements. File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd Line: 24
-Error (12152): Can't elaborate user hierarchy "filmCoords:film"
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 2 warnings
-    Error: Peak virtual memory: 4837 megabytes
-    Error: Processing ended: Tue Oct 26 23:00:31 2021
-    Error: Elapsed time: 00:00:05
-    Error: Total CPU time (on all processors): 00:00:13
+Warning (10542): VHDL Variable Declaration warning at filmCoords.vhd(23): used initial value expression for variable "f" because variable was never assigned a value File: C:/Users/Joep/Documents/GitHub/ABAES-miniProject-graphicsRenderer/VHDL/filmCoords.vhd Line: 23
+Info (12128): Elaborating entity "rotationCalc" for hierarchy "rotationCalc:inst13"
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "R" into its bus
+Info (12128): Elaborating entity "pwc" for hierarchy "pwc:inst"
+Info (12128): Elaborating entity "storeMatrix" for hierarchy "storeMatrix:R"
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "stored" into its bus
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4837 megabytes
+    Info: Processing ended: Wed Oct 27 22:35:27 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:14
 
 

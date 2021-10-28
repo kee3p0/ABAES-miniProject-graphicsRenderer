@@ -15,7 +15,7 @@ ENTITY rotationCalc IS
 		R3	: IN		t_4c_array;
 		pw	: IN  	t_3c_array;
 
-		pc : out		t_3c_array
+		pc_out : out		t_3c_array
 	);
 END rotationCalc;
 
@@ -33,7 +33,7 @@ BEGIN
 			end loop;
 		end loop;
 		for i in 0 to 2 loop
-			pc(i) <= std_logic_vector(tmp(i)(7 downto 0));
+			pc_out(i) <= std_logic_vector(tmp(i)(7 downto 0));
 		end loop;
 	end process;
 
