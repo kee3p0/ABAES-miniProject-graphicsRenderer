@@ -22,7 +22,9 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../../sources/vivado/EAAES_Fall_20/EAAES_IP_repo"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../miniProjectBareMetal/ip_repo/CoordinateCache/CoordinateCache.srcs/sources_1/new"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../miniProjectBareMetal/ip_repo/PixelAccelerator/PixelAccelerator.srcs/sources_1/new"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../sources/vivado/EAAES_Fall_20/EAAES_IP_repo"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
