@@ -1,0 +1,170 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 200 352)
+	(text "outputBuffer" (rect 5 0 54 12)(font "Arial" ))
+	(text "inst" (rect 8 320 20 332)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "load" (rect 0 0 15 12)(font "Arial" ))
+		(text "load" (rect 21 43 36 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "p0_u[7..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "p0_u[7..0]" (rect 21 59 61 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "P1_u[7..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "P1_u[7..0]" (rect 21 75 61 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "P2_u[7..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "P2_u[7..0]" (rect 21 91 62 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "P3_u[7..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "P3_u[7..0]" (rect 21 107 62 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "P4_u[7..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "P4_u[7..0]" (rect 21 123 63 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "P5_u[7..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "P5_u[7..0]" (rect 21 139 62 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "P6_u[7..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "P6_u[7..0]" (rect 21 155 62 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "P7_u[7..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "P7_u[7..0]" (rect 21 171 62 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "p0_v[7..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "p0_v[7..0]" (rect 21 187 62 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "P1_v[7..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "P1_v[7..0]" (rect 21 203 62 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "P2_v[7..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "P2_v[7..0]" (rect 21 219 63 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "P3_v[7..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "P3_v[7..0]" (rect 21 235 63 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "P4_v[7..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "P4_v[7..0]" (rect 21 251 64 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "P5_v[7..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "P5_v[7..0]" (rect 21 267 63 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "P6_v[7..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "P6_v[7..0]" (rect 21 283 63 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "P7_v[7..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "P7_v[7..0]" (rect 21 299 63 311)(font "Arial" ))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "data[17..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "data[17..0]" (rect 123 27 163 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "loadData" (rect 0 0 34 12)(font "Arial" ))
+		(text "loadData" (rect 129 43 163 55)(font "Arial" ))
+		(line (pt 184 48)(pt 168 48)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 320)(line_width 1))
+	)
+)
